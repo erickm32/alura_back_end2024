@@ -2,9 +2,22 @@ import fs from 'fs';
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
 export default class MongoConnection {
+  static #instance;
+  
+  static getInstance() {
+    if (!this.#instance) {
+      this.#instance = new MongoConnection()
+    }
+    return this.#instance;
+  }
+
   get db() { return this.client.db('sample_mflix'); }
 
   constructor() {
+    if (MongoConnection.#instance) {
+      throw new Error("Use .getInstance to access the singleton connection");
+    }
+
     const mongodbConnectionUri = this._setupCredentials();
     console.log(mongodbConnectionUri);
     this.client = new MongoClient(mongodbConnectionUri, {

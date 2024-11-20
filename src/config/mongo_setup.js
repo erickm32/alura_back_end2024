@@ -18,7 +18,7 @@ export default class MongoConnection {
       throw new Error("Use .getInstance to access the singleton connection");
     }
 
-    const mongodbConnectionUri = this._setupCredentials();
+    const mongodbConnectionUri = process.env.MONGODB_URI
     console.log(mongodbConnectionUri);
     this.client = new MongoClient(mongodbConnectionUri, {
       serverApi: {
@@ -42,14 +42,6 @@ export default class MongoConnection {
       // Send a ping to confirm a successful connection
       await this.client.db("sample_mflix").command({ ping: 1 });
       console.log("Pinged your deployment. You successfully connected to MongoDB!");
-  }
-
-  _setupCredentials() {
-    try {
-      return fs.readFileSync('mongo_access.txt', 'utf8');
-    } catch (err) {
-      console.error('Erro ao ler o arquivo:', err);
-    }
   }
 }
 

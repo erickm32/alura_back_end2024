@@ -1,3 +1,2 @@
 node_modules/*
-gemini_key.txt
-mongo_access.txt
+.env

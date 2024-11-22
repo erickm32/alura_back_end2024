@@ -17,25 +17,31 @@ export async function returnMovie(req, res) {
 };
 
 export async function createMovie(req, res) {
-  const newMovie = sanitize(req.body);
   try {
+    let newMovie = sanitize(req.body);
+    let posterFile = req.file;
+
+    if (posterFile) {
+      console.log(posterFile);
+      newMovie.poster = `uploads/${posterFile.filename}`;
+    }
     const createdMovie = await postMovieToMongo(newMovie);
     res.status(200).send(createdMovie);
   } catch (e) {
     console.error(e);
-    res.status(500).send({'error': 'Something went wrong'});
+    res.status(500).send({ 'error': 'Something went wrong' });
   }
 }
 
 export async function updateMovie(req, res) {
   const movieId = req.params.id;
   try {
-    const movieParams =  sanitize(req.body);
+    const movieParams = sanitize(req.body);
     const updatedMovie = await updateMovieOnMongo(movieId, movieParams);
     res.status(200).send(updatedMovie);
-  } catch(e) {
+  } catch (e) {
     console.error(e);
-    res.status(500).send({'error': 'Something went wrong'});
+    res.status(500).send({ 'error': 'Something went wrong' });
   }
 }
 
@@ -44,8 +50,8 @@ export async function deleteMovie(req, res) {
   try {
     const deletedMovie = await deleteMovieOnMongo(movieId);
     res.status(200).send(deletedMovie);
-  } catch(e) {
+  } catch (e) {
     console.error(e);
-    res.status(500).send({'error': 'Something went wrong'});
+    res.status(500).send({ 'error': 'Something went wrong' });
   }
 }

@@ -12,7 +12,6 @@ export async function getMovieFromMongo(movieId) {
 }
 
 export async function postMovieToMongo(movie) {
-  // handle image upload
   return MongoConnection.getInstance().db.collection('movies').insertOne(movie);
 }
 

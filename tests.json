@@ -1,0 +1,304 @@
+[
+  {
+    "_id": {
+      "$oid": "573a1390f29313caabcd42e9"
+    },
+    "plot": "A lone gunslinger must protect a small town from a notorious outlaw gang.",
+    "genres": [
+      "Action",
+      "Western"
+    ],
+    "runtime": {
+      "$numberInt": "95"
+    },
+    "cast": [
+      "Clint Eastwood",
+      "Lee Van Cleef",
+      "Eli Wallach"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYzMyOS00ZjQyLWI3NTUtYzFhYTM1ZGVlZWYzXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_.jpg",
+    "title": "The Lone Defender",
+    "fullplot": "A mysterious gunslinger rides into town and becomes the unlikely protector of a group of villagers under threat from a ruthless outlaw gang.",
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "released": {
+      "$date": {
+        "$numberLong": "1420070400000"
+      }
+    },
+    "directors": [
+      "John Sturges"
+    ],
+    "rated": "PG-13",
+    "awards": {
+      "wins": {
+        "$numberInt": "3"
+      },
+      "nominations": {
+        "$numberInt": "5"
+      },
+      "text": "3 wins & 5 nominations."
+    },
+    "lastupdated": "2024-01-15 10:32:45.123000000",
+    "year": {
+      "$numberInt": "1965"
+    },
+    "imdb": {
+      "rating": {
+        "$numberDouble": "8.1"
+      },
+      "votes": {
+        "$numberInt": "50237"
+      },
+      "id": {
+        "$numberInt": "1567"
+      }
+    },
+    "countries": [
+      "USA",
+      "Mexico"
+    ],
+    "type": "movie",
+    "tomatoes": {
+      "viewer": {
+        "rating": {
+          "$numberDouble": "4.2"
+        },
+        "numReviews": {
+          "$numberInt": "12345"
+        },
+        "meter": {
+          "$numberInt": "85"
+        }
+      },
+      "fresh": {
+        "$numberInt": "18"
+      },
+      "critic": {
+        "rating": {
+          "$numberDouble": "8.3"
+        },
+        "numReviews": {
+          "$numberInt": "12"
+        },
+        "meter": {
+          "$numberInt": "92"
+        }
+      },
+      "rotten": {
+        "$numberInt": "2"
+      },
+      "lastUpdated": {
+        "$date": {
+          "$numberLong": "1699987200000"
+        }
+      }
+    },
+    "num_mflix_comments": {
+      "$numberInt": "10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "573a1390f29313caabcd42ea"
+    },
+    "plot": "An inventor builds a time machine and travels to a future where society is divided into two groups.",
+    "genres": [
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "runtime": {
+      "$numberInt": "120"
+    },
+    "cast": [
+      "Rod Taylor",
+      "Alan Young",
+      "Yvette Mimieux"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjQ5MTAxNzM3NV5BMl5BanBnXkFtZTcwODQxNjAyMQ@@._V1_.jpg",
+    "title": "The Time Machine",
+    "fullplot": "A visionary inventor creates a device that allows him to explore the distant future, where humanity's survival is threatened by its own divisions.",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "released": {
+      "$date": {
+        "$numberLong": "1443657600000"
+      }
+    },
+    "directors": [
+      "George Pal"
+    ],
+    "rated": "PG",
+    "awards": {
+      "wins": {
+        "$numberInt": "1"
+      },
+      "nominations": {
+        "$numberInt": "2"
+      },
+      "text": "1 win & 2 nominations."
+    },
+    "lastupdated": "2024-01-20 14:45:33.567000000",
+    "year": {
+      "$numberInt": "1960"
+    },
+    "imdb": {
+      "rating": {
+        "$numberDouble": "7.6"
+      },
+      "votes": {
+        "$numberInt": "30145"
+      },
+      "id": {
+        "$numberInt": "6789"
+      }
+    },
+    "countries": [
+      "USA",
+      "UK"
+    ],
+    "type": "movie",
+    "tomatoes": {
+      "viewer": {
+        "rating": {
+          "$numberDouble": "4.0"
+        },
+        "numReviews": {
+          "$numberInt": "2234"
+        },
+        "meter": {
+          "$numberInt": "78"
+        }
+      },
+      "fresh": {
+        "$numberInt": "10"
+      },
+      "critic": {
+        "rating": {
+          "$numberDouble": "7.8"
+        },
+        "numReviews": {
+          "$numberInt": "15"
+        },
+        "meter": {
+          "$numberInt": "85"
+        }
+      },
+      "rotten": {
+        "$numberInt": "1"
+      },
+      "lastUpdated": {
+        "$date": {
+          "$numberLong": "1700102400000"
+        }
+      }
+    },
+    "num_mflix_comments": {
+      "$numberInt": "5"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "573a1390f29313caabcd42eb"
+    },
+    "plot": "A young wizard discovers his magical heritage and sets out to defeat a dark sorcerer.",
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "runtime": {
+      "$numberInt": "152"
+    },
+    "cast": [
+      "Daniel Radcliffe",
+      "Emma Watson",
+      "Rupert Grint"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk5ODg5NjU4Nl5BMl5BanBnXkFtZTcwMTQxNzUyMQ@@._V1_.jpg",
+    "title": "The Magic Journey",
+    "fullplot": "In a world of magic, a young wizard must learn to harness his powers and face the ultimate evil threatening the magical realm.",
+    "languages": [
+      "English"
+    ],
+    "released": {
+      "$date": {
+        "$numberLong": "1590969600000"
+      }
+    },
+    "directors": [
+      "Chris Columbus"
+    ],
+    "rated": "PG",
+    "awards": {
+      "wins": {
+        "$numberInt": "10"
+      },
+      "nominations": {
+        "$numberInt": "20"
+      },
+      "text": "10 wins & 20 nominations."
+    },
+    "lastupdated": "2024-02-01 12:00:00.000000000",
+    "year": {
+      "$numberInt": "2001"
+    },
+    "imdb": {
+      "rating": {
+        "$numberDouble": "7.8"
+      },
+      "votes": {
+        "$numberInt": "762347"
+      },
+      "id": {
+        "$numberInt": "1726"
+      }
+    },
+    "countries": [
+      "USA",
+      "UK"
+    ],
+    "type": "movie",
+    "tomatoes": {
+      "viewer": {
+        "rating": {
+          "$numberDouble": "4.5"
+        },
+        "numReviews": {
+          "$numberInt": "56789"
+        },
+        "meter": {
+          "$numberInt": "93"
+        }
+      },
+      "fresh": {
+        "$numberInt": "45"
+      },
+      "critic": {
+        "rating": {
+          "$numberDouble": "8.2"
+        },
+        "numReviews": {
+          "$numberInt": "30"
+        },
+        "meter": {
+          "$numberInt": "95"
+        }
+      },
+      "rotten": {
+        "$numberInt": "2"
+      },
+      "lastUpdated": {
+        "$date": {
+          "$numberLong": "1701139200000"
+        }
+      }
+    },
+    "num_mflix_comments": {
+      "$numberInt": "25"
+    }
+  }
+]

@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "express": "^4.21.1",
+    "mongo-sanitize": "^1.1.0",
     "mongodb": "^6.10.0"
   }
 }

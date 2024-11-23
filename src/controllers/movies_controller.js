@@ -1,5 +1,6 @@
 import sanitize from "mongo-sanitize";
 import { getMoviesFromMongo, getMovieFromMongo, postMovieToMongo, updateMovieOnMongo, deleteMovieOnMongo } from "../models/movie.js";
+import generatePosterAltDescriptionWithGemini from "../services/gemini_service.js";
 
 export async function returnMovies(req, res) {
   const movies = await getMoviesFromMongo();
@@ -24,6 +25,7 @@ export async function createMovie(req, res) {
     if (posterFile) {
       console.log(posterFile);
       newMovie.poster = `uploads/${posterFile.filename}`;
+      newMovie.poster_alt = await generatePosterAltDescriptionWithGemini(posterFile.path, posterFile.mimetype);
     }
     const createdMovie = await postMovieToMongo(newMovie);
     res.status(200).send(createdMovie);
